@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/icons8_whatsapp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:hint="Userame"
+        android:inputType="text"
+        android:padding="9dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:padding="9dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="Password"
+        android:padding="9dp" />
+
+    <TextView
+        android:id="@+id/tvAlreadyAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="4dp"
+        android:textSize="17sp"
+        android:text="Already have Account?" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="15dp"
+        android:textSize="17sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Sign up" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.3"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/icons8_google"
+            android:padding="15dp"
+            android:text="Google"
+            android:textSize="17sp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.3"
+            android:textSize="17sp"
+            android:backgroundTint="@color/fb_color"
+            android:padding="15dp"
+            android:text="Facebook" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSignUpPhone"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Sign up with your phone"/>
+</LinearLayout>
+</layout>

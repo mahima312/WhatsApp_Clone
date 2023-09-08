@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey">
+
+    <TextView
+        android:id="@+id/tvSendNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In with your phone"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/tvSendNo"
+        android:hint="Enter mobile Number"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:padding="9dp" />
+
+    <Button
+        android:id="@+id/btnNumberSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPhoneNumber"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button1"
+        android:layout_marginStart="200dp"
+        android:textSize="20dp"
+        android:text="sign In" />
+
+</RelativeLayout>
+</layout>
